@@ -80,7 +80,7 @@ router.use(function(req, res, next) {
 // ===================================
 // Initialize stores form data files.
 // Add new resource keys to `stores` object to enable them
-const apiRoot = '/api';
+const apiRoot = '';
 var stores = {
   books: [],
 }
