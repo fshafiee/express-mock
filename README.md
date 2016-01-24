@@ -1,6 +1,6 @@
 # Express.js ReSTful API Mock Server 
 
-Originally developed for [Reyhoon.com](https://www.reyhoon.com)'s development process, it's a simple mock server to remove production server dependency. It supports `GET`, `POST`, `PUT`, and `DELETE` HTTP methods. It's highly customizable and needs minimal configuration to support new resources.
+Originally developed for [Reyhoon.com](https://www.reyhoon.com)'s development process, it's a simple mock server to remove production server dependency from client-side application development cycle. It supports `GET`, `POST`, `PUT`, and `DELETE` HTTP methods, is highly customizable, and needs minimal configuration to support new resources.
 
 
 ## Getting Started
@@ -11,7 +11,7 @@ Originally developed for [Reyhoon.com](https://www.reyhoon.com)'s development pr
 - Install dependencies using `npm install`
 - Initialize data store files using `node seed.js`
 - Start the server by invoking `node mock.js`
-- API will be available at `http://localhost:4000/`.
+- Mock API will be available at `http://localhost:4000/`.
 
 ### Adding Resources
 - Add resource key to `stores` object.
@@ -45,7 +45,7 @@ var stores = {
 ]
 ~~~
 
-You will then have access to `books` resource using the standard ReSTful API:
+Restart the server and you will have access to `books` resource using the standard ReSTful API convention:
 
 	URL	  		| 	Method
 :-----------:|:-----------:
