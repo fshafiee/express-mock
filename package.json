@@ -1,20 +1,36 @@
 {
-  "name": "reyhoon-panel-mock",
-  "version": "0.0.1",
+  "name": "express-mock",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node mock.js"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
     "cookie-parser": "~1.3.5",
-    "debug": "~2.2.0",
     "express": "~4.13.1",
     "morgan": "~1.6.1",
-		"ncp": "~2.0.0"
+    "ncp": "~2.0.0",
+    "fs": "*",
+    "path": "*",
+    "util": "*"
   },
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/Ferixz/express-mock.git"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ferixz/express-mock.git"
+  },
+  "description": "Originally developed for [Reyhoon.com](https://www.reyhoon.com)'s development process, it's a simple mock server to remove production server dependency from client-side application development cycle. It supports `GET`, `POST`, `PUT`, and `DELETE` HTTP methods, is highly customizable, and needs minimal configuration to support new resources.",
+  "bugs": {
+    "url": "https://github.com/Ferixz/express-mock/issues"
+  },
+  "homepage": "https://github.com/Ferixz/express-mock#readme",
+  "main": "mock.js",
+  "devDependencies": {},
+  "keywords": [
+    "rest",
+    "api",
+    "mock",
+    "expressjs"
+  ],
+  "author": "Farzad Shafiee <frzd.shafiee@gmail.com>"
 }
