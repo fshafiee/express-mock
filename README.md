@@ -76,7 +76,7 @@ Keep in mind that when `POST`ing data to the mock server, you don't need to prov
 
 ~~~javascript
 // -- mock.js
-router.post('/panel/:resource', function(req, res) {
+router.post('/:resource', function(req, res) {
   // ...
   model.id = Date.now();
   // ...
